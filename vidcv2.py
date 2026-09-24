@@ -20,7 +20,7 @@ while cap.isOpened():
     break
 
   # 3. Perform object detection on the current frame
-  results = model(frame, verbose=False)
+  results = model(frame, verbose=True)
 
   # Get total number of objects detected in this frame
   detected_count = len(results[0].boxes)
